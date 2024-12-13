@@ -1,0 +1,193 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: rgba(0, 51, 204, 0.8);
+    /*background-image: url('img/Wallpaper\ 2.png');
+    background-size: cover;
+    background-position: center;*/
+}
+
+
+header {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 40px;
+    background-color: rgba(255, 204, 0, 0.8);
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+header h1 {
+    margin: 0;
+    color: rgba(0, 0, 102, 0.9);
+}
+
+h1 {
+    color: #fffacd;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.navegacao{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegacao nav ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navegacao nav ul li{
+   display: inline;
+   margin-right: 40px;
+}
+
+.navegacao nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+
+}
+
+footer {
+    background-color: rgba(63, 81, 181, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 2opx;
+}
+
+footer p {
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+img {
+    margin: 1 auto;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+section {
+    padding: 10px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.sinopse{
+    background-color: #fffacd;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+.enredo {
+    background-color: #cce5ff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+.temasPrincipais {
+    background-color: #ffecb3;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+.personagens {
+    background-color: #c3ffb3;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#estrelas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.estrela{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkling 3s infinite;
+}
+
+@keyframes twinkling{
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+.carousel-container {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    width: 80%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
